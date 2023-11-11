@@ -1,0 +1,537 @@
+
+.body {
+    font-family: 'Noto Sans KR', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    text-align: center;
+    background-color: #f8fde0;
+}
+li {
+    list-style: none;
+}
+.logo {
+    margin-left: 15px;
+    margin-right:70px;
+    float:left;
+    font-size: 27px;
+    font-weight: bold;
+    color : pink;
+    border-color: 1px solid #000;
+}
+.header-center {
+    margin-top: 20px;
+    width:1000px;
+    height:45px;
+    
+}
+
+.header-center ul li {
+    float: left;
+    width:20%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+
+html {
+    color: dimgray;
+    font-family: sans-serif;  
+    line-height: 1.6;
+    font-weight: bolder;
+}
+.header-center a { 
+
+    text-decoration: none;
+    color: #000;
+    display:inline-block; 
+    margin:0;
+    text-transform:uppercase; }
+.header-center a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px purple;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.header-center a:hover:after { transform: scaleX(1); }
+.header-center a.fromRight:after{ transform-origin:100% 50%; }
+.header-center a.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+/* 로그인 css */
+.log {
+    float: right;
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+
+.log a{
+    float:left;
+    text-decoration: none;
+    display:inline-block;
+    color: #000; 
+
+}
+
+/* 슬라이더 1 시작 */
+.slider-1 {
+    height:400px;
+    /* width: 80%; */
+    position:relative;
+    /* left: 50%;
+    transform: translate( -50%);   */
+}
+.slider-1 > .slides {
+    
+}
+
+/* 슬라이더 1 - 페이지 버튼 */
+.slider-1 > .page-btns {
+    text-align:center;
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width:90%;
+}
+
+.slider-1 > .page-btns > div {
+    width:20px;
+    height:20px;
+    background-color:#000;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.slider-1 > .page-btns > div.active {
+    background-color:rgba(255,255,255,1);
+}
+
+/* 슬라이더 1 - 슬라이드 */
+
+.slider-1 > .slides > div {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+    transition: opacity 0.3s;
+    background-position:center;
+    /* background-size:cover; */
+    background-size: 100% 400px;
+    
+    background-repeat:no-repeat;
+    
+    width: 100%;
+    height: 400px;
+    
+}
+
+.slider-1 > .slides > div.active {
+    opacity:1;
+    object-fit: cover;
+}
+
+/* 슬라이더 1 끝 */
+
+.blank {
+    height:40px;
+    display: block;
+}
+
+/* Map으로 가는 배너 시작 */
+.mapshortcut {
+    height:350px;
+    width:100%;
+    background-color: #233e83;
+    background-size: 100% auto;
+    overflow: hidden;
+    word-break: keep-all;
+    
+    
+}
+.mapshortcut .mapshortcut_con {
+    padding: 0 1%;
+    max-width: 1180px;
+    margin: 0 auto;
+    
+    
+}
+.mapshortcut .mapshortcut_con h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    padding-top: 40px;
+    line-height: 1.4em;
+}
+
+.mapshortcut .mapshortcut_con h2 em {
+    
+    display: block;
+    font-weight: 900;
+    font-size: 42px;
+    font-style: normal;
+}
+.mapshortcut .mapshortcut_con p {
+    font-size: 17px;
+    color: #fff;
+    font-family: '나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum;
+    line-height: 1.4em;
+    margin-top: 17px;
+    text-align: left;
+}
+.mapshortcut .mapshortcut_con p span {
+    display: block;
+}
+.mapshortcut .mapshortcut_con .cut_btn {
+    position: relative;
+    width: 190px;
+    /* margin: 36px auto; */
+    z-index: 20;
+}
+.mapshortcut .mapshortcut_con .cut_btn.main_btn a {
+    display: block;
+    border: solid 1px #FFFFFF;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+.main_btn a {
+    display: inline-block;
+    width: 188px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border: solid 1px #b8bfd4;
+    font-size: 15px;
+    font-weight: 500;
+    color: #233e83;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-weight:800;
+}
+.main_btn a:hover {
+    background-color:  #fff;
+    color : #233e83;
+}
+.mapshortcut .mapshortcut_con .cut_btn.main_btn a:hover {
+    color: #233e83;
+    font-weight:800;
+}
+.mapshortcut .mapshortcut_img {
+    margin-top: -350px;
+}
+
+.mapshortcut .mapshortcut_img img {
+    max-width: 700px;
+    margin-right: -150px;
+    float: right;
+    width: 120%;
+    height: auto;
+    margin-right: 0px;
+}
+img, fieldset {
+    border: 0px;
+    vertical-align: top;
+}
+img {
+    overflow-clip-margin: content-box;
+    aspect-ratio: auto 1063 / 349;
+    overflow: clip;
+}
+/* Map으로 가는 배너 끝 */
+
+/* Danger으로 가는 배너 시작 */
+.dangershortcut {
+    height:350px;
+    width:100%;
+    background-color: #b75f01;
+    background-size: 100% auto;
+    overflow: hidden;
+    word-break: keep-all;
+    
+    
+}
+.dangershortcut .dangershortcut_con {
+    padding: 0 1%;
+    max-width: 1180px;
+    margin: 0 auto;
+    
+    
+}
+.dangershortcut .dangershortcut_con h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #fff;
+    padding-top: 40px;
+    line-height: 1.4em;
+}
+
+.dangershortcut .dangershortcut_con h2 em {
+    
+    display: block;
+    font-weight: 900;
+    font-size: 42px;
+    font-style: normal;
+}
+.dangershortcut .dangershortcut_con p {
+    font-size: 17px;
+    color: #fff;
+    font-family: '나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum;
+    line-height: 1.4em;
+    margin-top: 17px;
+    text-align: left;
+}
+.dangershortcut .dangershortcut_con p span {
+    display: block;
+}
+.dangershortcut .dangershortcut_con .cut_btn {
+    position: relative;
+    width: 190px;
+    /* margin: 36px auto; */
+    z-index: 20;
+}
+.dangershortcut .dangershortcut_con .cut_btn.danger_btn a {
+    display: block;
+    border: solid 1px #FFFFFF;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+.danger_btn a {
+    display: inline-block;
+    width: 188px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border: solid 1px #b8bfd4;
+    font-size: 15px;
+    font-weight: 500;
+    color: #233e83;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-weight:800;
+}
+.danger_btn a:hover {
+    background-color:  #fff;
+    color : #b75f01;
+}
+.dangershortcut .dangershortcut_con .cut_btn.danger_btn a:hover {
+    color: #b75f01;
+    font-weight:800;
+}
+.dangershortcut .dangershortcut_img {
+    margin-top: -300px;
+}
+
+.dangershortcut .dangershortcut_img img {
+    max-width: 450px;
+    margin-right: -150px;
+    float: right;
+    width: 120%;
+    height: auto;
+    margin-right: 0px;
+}
+img, fieldset {
+    border: 0px;
+    vertical-align: top;
+}
+img {
+    overflow-clip-margin: content-box;
+    aspect-ratio: auto 1063 / 349;
+    overflow: clip;
+}
+/* Danger으로 가는 배너 끝부분 */
+
+/* main_buttom */
+.main_bottom {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+/* 1. 게시판 */
+.main_board {
+    background: url(../image/board.png) no-repeat left;
+    background-size: contain;
+    opacity: 0.7;
+    
+}
+.main_bn {
+    position: relative;
+    margin-left:5%;
+    float: left;
+    width: 40.96%;
+    height: 330px;
+    margin-right: 0.84%;
+    padding: 44px 35px 0 35px;
+    box-sizing: border-box;
+}
+
+.main_bn h2 {
+    margin-left:40px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    font-family: '나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum;
+    line-height: 1.25em;
+}
+.main_bn h2:after {
+    margin-left: 5px;
+    display: block;
+    content: "";
+    width: 42px;
+    height: 1px;
+    background: #000;
+    margin-top: 13px;
+}
+
+.main_bn a{
+    margin-left:40px;
+    display: inline-block;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border: solid 2px black;
+    font-size: 15px;
+    font-weight: 500;
+    color: #233e83;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-weight:800;
+}
+.main_bn a:hover {
+    background-color: #000;
+    color: #FFF;
+}
+/* 게시판 끝 */
+
+.main_bnright {
+    margin-left: 40px;
+    position: relative;
+    width: 100%;
+}
+/*2. 업데이트 내역 */
+.main_update {
+   
+    width: 68%;
+    margin: 40px 7% 0 7%;
+}
+.main_update h2 {
+    
+    font-size: 20px;
+    font-weight: 600;
+    color: #202023;
+    font-family: '나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum;
+}
+.main_update .more_btn {
+    float: right;
+    margin-top: -17px;
+    cursor: pointer;
+    
+}
+.main_update .more_btn a {
+
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.main_update ul {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 21px;
+    font-size: 15px;
+}
+.main_update ul li {
+    margin-bottom: 4px;
+}
+
+/* 날씨api */
+.weather-container {
+    /* display: flex; */
+    /* align-items: center; */
+    font-family: Arial, sans-serif;
+}
+.weather-container h2 {
+   
+    font-size: 20px;
+    font-weight: 600;
+    color: #202023;
+    font-family: '나눔스퀘어', NanumSquare, NS, '맑은 고딕', MalgunGothic, '돋움', Dotum;
+}
+
+.weather-icon {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+/* 가장 하단부 */
+.under {
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+}
+.firstunder {
+    width: 100%;
+    height:40px;
+    background-color: #262626;
+    border: 1px solid #8d8d8d;
+    display: flex;
+    align-items: center;
+}
+
+.firstunder ul li {
+    text-align: center;
+    float:left;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.firstunder ul li a {
+    text-decoration: none;
+    display:inline-block;
+    color: #fff;
+}
+
+
+.secondunder {
+    text-align: center;
+    width:100%;
+    height:150px;
+    background-color: #262626;
+    border: 1px solid #8d8d8d;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.secondunder h2 {
+    display: inline-block;
+    color: #fff;
+    
+}
+.secondunder p {
+    margin-top: -5px;
+    
+}
+.secondunder h3 {
+    display: block;
+    height:30px;
+}
+.secondunder span {
+    margin-top: 30px;
+}

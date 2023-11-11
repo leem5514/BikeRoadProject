@@ -1,0 +1,80 @@
+
+.body {
+    
+    text-align: center;
+    background-color: #f8fde0;
+}
+li {
+    list-style: none;
+}
+.logo {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right:70px;
+    float:left;
+    font-size: 27px;
+    font-weight: bold;
+    color : pink;
+    border-color: 1px solid #000;
+}
+.header-center {
+    margin-top: 20px;
+    width:1000px;
+    height:45px;
+    
+}
+
+.header-center ul li {
+    float: left;
+    width:20%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+
+html {
+    color: dimgray;
+    font-family: sans-serif;  
+    line-height: 1.6;
+    font-weight: bolder;
+}
+.header-center a { 
+
+    text-decoration: none;
+    color: #000;
+    display:inline-block; 
+    margin:0;
+    text-transform:uppercase; }
+.header-center a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px purple;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.header-center a:hover:after { transform: scaleX(1); }
+.header-center a.fromRight:after{ transform-origin:100% 50%; }
+.header-center a.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+/* 로그인 css */
+.log {
+    float: right;
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+
+.log a{
+    float:left;
+    text-decoration: none;
+    display:inline-block;
+    color: #000; 
+
+}
+
+.mainpoint h3 {
+    font-weight: 400;
+    margin-left: 50px;
+}

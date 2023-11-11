@@ -1,0 +1,36 @@
+
+.body {
+    font-family: 'Noto Sans KR', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    text-align: center;
+    background-color: #f8fde0;
+}
+li {
+    list-style: none;
+}
+.logo {
+    margin-left: 15px;
+    margin-right:70px;
+    float:left;
+    font-size: 27px;
+    font-weight: bold;
+    color : pink;
+    border-color: 1px solid #000;
+    cursor: pointer;
+}
+
+
+/* 로그인 css */
+.log {
+    float: right;
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+
+.log a{
+    float:left;
+    text-decoration: none;
+    display:inline-block;
+    color: #000; 
+
+}
