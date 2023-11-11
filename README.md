@@ -40,10 +40,116 @@ intellij 으로 Java / javascript 구현 / visual studio code html / css / javas
 ![image](https://github.com/leem5514/bicycleProject/assets/116091798/fef1a483-2d64-4dcd-af44-f93f09901e52)
 
 ## 기타 코드
+<p> WEATHER API를 통한 날씨 정보를 제공</p>
+```
+    <script>
+        // OpenWeatherMap API 키
+        const apiKey = "개인 키";
+        // 위치 정보 (도시 이름, 국가 코드)
+        const city = "Seoul,KR";
+        // API 요청 URL
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
+        // API 호출 및 날씨 정보 표시
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const weatherIcon = data.weather[0].icon;
+                const iconUrl = `http://openweathermap.org/img/w/${weatherIcon}.png`;
+                const weatherIconElement = document.getElementById("weather-icon");
+                weatherIconElement.style.backgroundImage = `url(${iconUrl})`;
+
+                const cityNameElement = document.getElementById("city-name");
+                cityNameElement.textContent = data.name;
+
+                const temperatureElement = document.getElementById("temperature");
+                const temperature = data.main.temp - 273.15;
+                temperatureElement.textContent = ` ${temperature.toFixed(1)}°C`;
+            })
+            .catch(error => {
+                console.log("Error fetching weather data:", error);
+            });
+    </script>
+</div>
+```
+
+<P> 카카오 MAP API</P>
+
+
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    // 지도의 크기 제공
+    <div id="map" style="width:100%;height:100vh;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey='제공받은 api 키'"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.55564880, 126.91062927), //중심좌표
+            level: 3
+        };
+        var map = new kakao.maps.Map(container, options);
+        map.addOverlayMapTypeId(kakao.maps.MapTypeId.BICYCLE);
+    </script>
+    
 ## 화면 구성
+main.html<br>
+![image](https://github.com/leem5514/CocktailProject/assets/116091798/89fb2a5a-83b9-46a6-9539-6eecc47c8834)
+<br>
+기본화면으로서 지도, 날씨정보, 로그인, 자전거 보관함 , 위험구간, 게시판 으로 이동할 수 있도록 설계
+<br>
+<br>
+login.html
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/a12fc425-3bce-4341-9c18-dd8e48647c3d)
+<br>
+로그인 사이트로 회원가입하고 로그인 가능
+카카오톡 api를 적용하여 카카오로도 로그인 할 수 있도록 설계
+<br>
+<br>
+게시판 리스트 , 생성 , 수정 , 삭제 기능
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/194583cb-56bb-4e13-bf20-de51cd0775e6)
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/0c3131aa-9ef9-48d5-ac5a-ba776aeab3d8)
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/90197f21-b5cf-4d8d-90c5-343f5830e022)
+<br>
+<br>
+
+자전거 도로, 위험 구역, 자전거 거치대 화면 구성
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/6a4f715a-d908-42bf-b6c3-2c58bb5d9c68)
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/8ec0d9b7-a9f1-4fa8-9395-1aab693f7593)
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/fd78721e-07cc-412b-9099-ffba33358de4)
+<br>
+<br>
+
+업데이트 기록
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/a44a00fe-6284-43a2-8764-9f75611b3672)
+<br>
+<br>
+
+개인정보 처리 방침
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/d3298944-8f32-4449-a7a0-c680c180ccb8)
+<br>
+<br>
+
+참고 사이트
+<br>
+![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/d3173774-1a19-4447-bd2c-9f1fc0c90c63)
+<br>
+<br>
+
+등의 화면 구성
+<br>
+
+
+
 
 
 ## 시현 영상
-<Youtube 영상>
+<a>Youtube 영상</a><br>
 [![Video Label](http://img.youtube.com/vi/FVN-WD0xFwI/0.jpg)](https://youtu.be/FVN-WD0xFwI)
