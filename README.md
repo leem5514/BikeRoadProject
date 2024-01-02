@@ -26,7 +26,7 @@
 intellij 으로 Java / javascript 구현 / visual studio code html / css / javascript 구현 
 로그인 정보 및 게시판 정보 입력 기능으로 mysql DataBase 선택
 ## 사용 기술
-![image](https://github.com/leem5514/CocktailProject/assets/116091798/0fb26f38-0ef8-434c-849b-b0cc9700e587) &nbsp;
+
 ![image](https://github.com/leem5514/CocktailProject/assets/116091798/5dd6bb86-cb67-41a9-bcc1-fdabc227c905) &nbsp;
 ![image](https://github.com/leem5514/CocktailProject/assets/116091798/a28922f2-e4fb-4d62-8ede-a51c2ac3f736) &nbsp;
 ![image](https://github.com/leem5514/CocktailProject/assets/116091798/4b92c401-ac71-4c36-9163-9e6e66edb039)
