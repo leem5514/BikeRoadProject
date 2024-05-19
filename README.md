@@ -137,11 +137,6 @@ login.html
 <br>
 <br>
 
-참고 사이트
-<br>
-![image](https://github.com/leem5514/BikeRoadProject/assets/116091798/d3173774-1a19-4447-bd2c-9f1fc0c90c63)
-<br>
-<br>
 
 등의 화면 구성
 <br>
