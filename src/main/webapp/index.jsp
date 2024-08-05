@@ -171,7 +171,7 @@
     <script>
 
         // OpenWeatherMap API 키
-        const apiKey = "2f9a2fa39fccfdbe843e3eb7e3b73d8f";
+        const apiKey = "${apiKey}";
         // 위치 정보 (도시 이름, 국가 코드)
         const city = "Seoul,KR";
         // API 요청 URL
